@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="554.0" maxWidth="793.0" prefHeight="397.0" prefWidth="721.0" style="-fx-background-color: #02030A; -fx-background-radius: 5; -fx-background-insets: 0;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.softwareEngineering.taskmanager.Admin.ControllerAcc">
+<VBox>
+    <effect>
+        <DropShadow blurType="GAUSSIAN" height="5.0" radius="2.0" width="5.0" />
+    </effect>
+</VBox>
+   <TableView fx:id="accounts_tableview" layoutX="317.0" layoutY="17.0" prefHeight="342.0" prefWidth="348.0" stylesheets="@tableview.css">
+   </TableView>
+  <Button fx:id="create" layoutX="135.0" layoutY="301.0" mnemonicParsing="false" onAction="#erstellen" prefHeight="42.0" prefWidth="96.0" style="-fx-border-color: #2A73FF; -fx-border-radius: 20; -fx-background-color: transparent;" stylesheets="@style.css" text="Erstellen">
+      <font>
+         <Font size="18.0" />
+      </font></Button>
+  <Label fx:id="account_id" layoutX="56.0" layoutY="100.0" text="Account ID:" textFill="#b7c3d7">
+      <font>
+         <Font size="14.0" />
+      </font></Label>
+  <Label fx:id="lst_nam" layoutX="56.0" layoutY="200.0" text="Last Name:" textFill="#b7c3d7">
+      <font>
+         <Font size="14.0" />
+      </font></Label>
+  <Label fx:id="fi_na" layoutX="56.0" layoutY="150.0" text="First Name:" textFill="#b7c3d7">
+      <font>
+         <Font size="14.0" />
+      </font></Label>
+  <Label fx:id="password_label" layoutX="56.0" layoutY="250.0" text="Password:" textFill="#b7c3d7">
+      <font>
+         <Font size="14.0" />
+      </font></Label>
+   <Label layoutX="87.0" layoutY="51.0" text="Konto Erstellen" textFill="#faf6f6">
+      <font>
+         <Font name="System Bold" size="24.0" />
+      </font>
+   </Label>
+   <TextField fx:id="acct_id" layoutX="135.0" layoutY="100.0" prefHeight="26.0" prefWidth="158.0" stylesheets="@style.css" />
+   <TextField fx:id="fir_na" layoutX="135.0" layoutY="150.0" prefHeight="26.0" prefWidth="158.0" stylesheets="@style.css" />
+   <TextField fx:id="last_na" layoutX="135.0" layoutY="200.0" prefHeight="26.0" prefWidth="158.0" stylesheets="@style.css" />
+   <TextField fx:id="pass" layoutX="135.0" layoutY="250.0" prefHeight="26.0" prefWidth="158.0" stylesheets="@style.css" />
+</AnchorPane>
